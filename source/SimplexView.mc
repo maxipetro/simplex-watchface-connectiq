@@ -745,8 +745,8 @@ class SimplexView extends WatchUi.WatchFace
             drawSecondsHand(dc, true, seconds_hand_length_setting);
         }
 
-        //for debugging to check execution time of whole redraw routine
-        //onUpdate(dc);
+        // for debugging to check execution time of whole redraw routine
+        // onUpdate(dc);
     }
 
 }

@@ -4279,6 +4279,13 @@ _home_max_git_simplex_garmin_watchface_source_SimplexView_mc_744_8_746_8_start:
 _home_max_git_simplex_garmin_watchface_source_SimplexView_mc_744_8_746_8_stop:
         goto @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_743_8_746_8_if_end;
 _home_max_git_simplex_garmin_watchface_source_SimplexView_mc_743_8_746_8_if_end:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 749 8 ]
+        %tmp.14 = self;
+        symbol [ onUpdate %tmp.15 749 8 16 ];
+        %tmp.15 = getv function %tmp.14 :onUpdate;
+        %tmp.16 = lgetv %dc;
+        symbol [ dc %tmp.16 749 17 19 ];
+        invoke %tmp.14 %tmp.15(%tmp.16);
 _home_max_git_simplex_garmin_watchface_source_SimplexView_mc_742_4_750_4_stop:
     }
 }
