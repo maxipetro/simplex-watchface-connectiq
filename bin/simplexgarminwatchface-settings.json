@@ -168,10 +168,31 @@
     "configMax" : null,
     "configMaxLength" : null
   }, {
-    "key" : "BackgroundColor",
+    "key" : "DrawDatafield",
     "valueType" : "number",
     "defaultValue" : 0,
     "configTitle" : "$literal14$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal1$",
+      "value" : 1
+    }, {
+      "display" : "$literal2$",
+      "value" : 0
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "BackgroundColor",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "$literal15$",
     "configPrompt" : null,
     "configType" : "list",
     "configError" : null,
@@ -237,7 +258,7 @@
     "key" : "ForegroundColorOne",
     "valueType" : "number",
     "defaultValue" : 16777215,
-    "configTitle" : "$literal15$",
+    "configTitle" : "$literal16$",
     "configPrompt" : null,
     "configType" : "list",
     "configError" : null,
@@ -303,7 +324,7 @@
     "key" : "ForegroundColorTwo",
     "valueType" : "number",
     "defaultValue" : 11184810,
-    "configTitle" : "$literal16$",
+    "configTitle" : "$literal17$",
     "configPrompt" : null,
     "configType" : "list",
     "configError" : null,
@@ -369,7 +390,7 @@
     "key" : "MinuteHandColorOne",
     "valueType" : "number",
     "defaultValue" : 11184810,
-    "configTitle" : "$literal17$",
+    "configTitle" : "$literal18$",
     "configPrompt" : null,
     "configType" : "list",
     "configError" : null,
@@ -435,7 +456,7 @@
     "key" : "MinuteHandColorTwo",
     "valueType" : "number",
     "defaultValue" : 16777215,
-    "configTitle" : "$literal18$",
+    "configTitle" : "$literal19$",
     "configPrompt" : null,
     "configType" : "list",
     "configError" : null,
@@ -501,7 +522,7 @@
     "key" : "HourHandColorOne",
     "valueType" : "number",
     "defaultValue" : 11184810,
-    "configTitle" : "$literal19$",
+    "configTitle" : "$literal20$",
     "configPrompt" : null,
     "configType" : "list",
     "configError" : null,
@@ -567,7 +588,7 @@
     "key" : "HourHandColorTwo",
     "valueType" : "number",
     "defaultValue" : 16777215,
-    "configTitle" : "$literal20$",
+    "configTitle" : "$literal21$",
     "configPrompt" : null,
     "configType" : "list",
     "configError" : null,
@@ -633,7 +654,7 @@
     "key" : "SecondsHandColor",
     "valueType" : "number",
     "defaultValue" : 11141120,
-    "configTitle" : "$literal21$",
+    "configTitle" : "$literal22$",
     "configPrompt" : null,
     "configType" : "list",
     "configError" : null,
@@ -699,7 +720,7 @@
     "key" : "MinuteHandWidth",
     "valueType" : "number",
     "defaultValue" : 5,
-    "configTitle" : "$literal22$",
+    "configTitle" : "$literal23$",
     "configPrompt" : null,
     "configType" : "list",
     "configError" : null,
@@ -707,46 +728,46 @@
     "configReadonly" : false,
     "configRequired" : false,
     "configOptions" : [ {
-      "display" : "$literal23$",
+      "display" : "$literal24$",
       "value" : 2
     }, {
-      "display" : "$literal24$",
+      "display" : "$literal25$",
       "value" : 3
     }, {
-      "display" : "$literal25$",
+      "display" : "$literal26$",
       "value" : 4
     }, {
-      "display" : "$literal26$",
+      "display" : "$literal27$",
       "value" : 5
     }, {
-      "display" : "$literal27$",
+      "display" : "$literal28$",
       "value" : 6
     }, {
-      "display" : "$literal28$",
+      "display" : "$literal29$",
       "value" : 7
     }, {
-      "display" : "$literal29$",
+      "display" : "$literal30$",
       "value" : 8
     }, {
-      "display" : "$literal30$",
+      "display" : "$literal31$",
       "value" : 9
     }, {
-      "display" : "$literal31$",
+      "display" : "$literal32$",
       "value" : 10
     }, {
-      "display" : "$literal32$",
+      "display" : "$literal33$",
       "value" : 11
     }, {
-      "display" : "$literal33$",
+      "display" : "$literal34$",
       "value" : 12
     }, {
-      "display" : "$literal34$",
+      "display" : "$literal35$",
       "value" : 13
     }, {
-      "display" : "$literal35$",
+      "display" : "$literal36$",
       "value" : 14
     }, {
-      "display" : "$literal36$",
+      "display" : "$literal37$",
       "value" : 15
     } ],
     "configMin" : null,
@@ -756,7 +777,7 @@
     "key" : "HourHandWidth",
     "valueType" : "number",
     "defaultValue" : 8,
-    "configTitle" : "$literal37$",
+    "configTitle" : "$literal38$",
     "configPrompt" : null,
     "configType" : "list",
     "configError" : null,
@@ -764,46 +785,46 @@
     "configReadonly" : false,
     "configRequired" : false,
     "configOptions" : [ {
-      "display" : "$literal23$",
+      "display" : "$literal24$",
       "value" : 2
     }, {
-      "display" : "$literal24$",
+      "display" : "$literal25$",
       "value" : 3
     }, {
-      "display" : "$literal25$",
+      "display" : "$literal26$",
       "value" : 4
     }, {
-      "display" : "$literal26$",
+      "display" : "$literal27$",
       "value" : 5
     }, {
-      "display" : "$literal27$",
+      "display" : "$literal28$",
       "value" : 6
     }, {
-      "display" : "$literal28$",
+      "display" : "$literal29$",
       "value" : 7
     }, {
-      "display" : "$literal29$",
+      "display" : "$literal30$",
       "value" : 8
     }, {
-      "display" : "$literal30$",
+      "display" : "$literal31$",
       "value" : 9
     }, {
-      "display" : "$literal31$",
+      "display" : "$literal32$",
       "value" : 10
     }, {
-      "display" : "$literal32$",
+      "display" : "$literal33$",
       "value" : 11
     }, {
-      "display" : "$literal33$",
+      "display" : "$literal34$",
       "value" : 12
     }, {
-      "display" : "$literal34$",
+      "display" : "$literal35$",
       "value" : 13
     }, {
-      "display" : "$literal35$",
+      "display" : "$literal36$",
       "value" : 14
     }, {
-      "display" : "$literal36$",
+      "display" : "$literal37$",
       "value" : 15
     } ],
     "configMin" : null,
@@ -813,7 +834,7 @@
     "key" : "HourHandLength",
     "valueType" : "number",
     "defaultValue" : 3,
-    "configTitle" : "$literal38$",
+    "configTitle" : "$literal39$",
     "configPrompt" : null,
     "configType" : "list",
     "configError" : null,
@@ -821,31 +842,31 @@
     "configReadonly" : false,
     "configRequired" : false,
     "configOptions" : [ {
-      "display" : "$literal39$",
+      "display" : "$literal40$",
       "value" : 0
     }, {
-      "display" : "$literal40$",
+      "display" : "$literal41$",
       "value" : 1
     }, {
-      "display" : "$literal23$",
+      "display" : "$literal24$",
       "value" : 2
     }, {
-      "display" : "$literal24$",
+      "display" : "$literal25$",
       "value" : 3
     }, {
-      "display" : "$literal25$",
+      "display" : "$literal26$",
       "value" : 4
     }, {
-      "display" : "$literal26$",
+      "display" : "$literal27$",
       "value" : 5
     }, {
-      "display" : "$literal27$",
+      "display" : "$literal28$",
       "value" : 6
     }, {
-      "display" : "$literal28$",
+      "display" : "$literal29$",
       "value" : 7
     }, {
-      "display" : "$literal29$",
+      "display" : "$literal30$",
       "value" : 8
     } ],
     "configMin" : null,
@@ -853,48 +874,6 @@
     "configMaxLength" : null
   }, {
     "key" : "MinuteHandLength",
-    "valueType" : "number",
-    "defaultValue" : 7,
-    "configTitle" : "$literal41$",
-    "configPrompt" : null,
-    "configType" : "list",
-    "configError" : null,
-    "configHelpUrl" : null,
-    "configReadonly" : false,
-    "configRequired" : false,
-    "configOptions" : [ {
-      "display" : "$literal39$",
-      "value" : 0
-    }, {
-      "display" : "$literal40$",
-      "value" : 1
-    }, {
-      "display" : "$literal23$",
-      "value" : 2
-    }, {
-      "display" : "$literal24$",
-      "value" : 3
-    }, {
-      "display" : "$literal25$",
-      "value" : 4
-    }, {
-      "display" : "$literal26$",
-      "value" : 5
-    }, {
-      "display" : "$literal27$",
-      "value" : 6
-    }, {
-      "display" : "$literal28$",
-      "value" : 7
-    }, {
-      "display" : "$literal29$",
-      "value" : 8
-    } ],
-    "configMin" : null,
-    "configMax" : null,
-    "configMaxLength" : null
-  }, {
-    "key" : "SecondsHandLength",
     "valueType" : "number",
     "defaultValue" : 7,
     "configTitle" : "$literal42$",
@@ -905,31 +884,73 @@
     "configReadonly" : false,
     "configRequired" : false,
     "configOptions" : [ {
-      "display" : "$literal39$",
+      "display" : "$literal40$",
       "value" : 0
     }, {
-      "display" : "$literal40$",
+      "display" : "$literal41$",
       "value" : 1
     }, {
-      "display" : "$literal23$",
+      "display" : "$literal24$",
       "value" : 2
     }, {
-      "display" : "$literal24$",
+      "display" : "$literal25$",
       "value" : 3
     }, {
-      "display" : "$literal25$",
+      "display" : "$literal26$",
       "value" : 4
     }, {
-      "display" : "$literal26$",
+      "display" : "$literal27$",
       "value" : 5
     }, {
-      "display" : "$literal27$",
+      "display" : "$literal28$",
       "value" : 6
     }, {
-      "display" : "$literal28$",
+      "display" : "$literal29$",
       "value" : 7
     }, {
+      "display" : "$literal30$",
+      "value" : 8
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "SecondsHandLength",
+    "valueType" : "number",
+    "defaultValue" : 7,
+    "configTitle" : "$literal43$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal40$",
+      "value" : 0
+    }, {
+      "display" : "$literal41$",
+      "value" : 1
+    }, {
+      "display" : "$literal24$",
+      "value" : 2
+    }, {
+      "display" : "$literal25$",
+      "value" : 3
+    }, {
+      "display" : "$literal26$",
+      "value" : 4
+    }, {
+      "display" : "$literal27$",
+      "value" : 5
+    }, {
+      "display" : "$literal28$",
+      "value" : 6
+    }, {
       "display" : "$literal29$",
+      "value" : 7
+    }, {
+      "display" : "$literal30$",
       "value" : 8
     } ],
     "configMin" : null,
@@ -939,7 +960,7 @@
     "key" : "MinuteHandThinning",
     "valueType" : "number",
     "defaultValue" : 4,
-    "configTitle" : "$literal43$",
+    "configTitle" : "$literal44$",
     "configPrompt" : null,
     "configType" : "list",
     "configError" : null,
@@ -947,37 +968,37 @@
     "configReadonly" : false,
     "configRequired" : false,
     "configOptions" : [ {
-      "display" : "$literal39$",
+      "display" : "$literal40$",
       "value" : 0
     }, {
-      "display" : "$literal40$",
+      "display" : "$literal41$",
       "value" : 1
     }, {
-      "display" : "$literal23$",
+      "display" : "$literal24$",
       "value" : 2
     }, {
-      "display" : "$literal24$",
+      "display" : "$literal25$",
       "value" : 3
     }, {
-      "display" : "$literal25$",
+      "display" : "$literal26$",
       "value" : 4
     }, {
-      "display" : "$literal26$",
+      "display" : "$literal27$",
       "value" : 5
     }, {
-      "display" : "$literal27$",
+      "display" : "$literal28$",
       "value" : 6
     }, {
-      "display" : "$literal28$",
+      "display" : "$literal29$",
       "value" : 7
     }, {
-      "display" : "$literal29$",
+      "display" : "$literal30$",
       "value" : 8
     }, {
-      "display" : "$literal30$",
+      "display" : "$literal31$",
       "value" : 9
     }, {
-      "display" : "$literal31$",
+      "display" : "$literal32$",
       "value" : 10
     } ],
     "configMin" : null,
@@ -987,7 +1008,7 @@
     "key" : "HourHandThinning",
     "valueType" : "number",
     "defaultValue" : 8,
-    "configTitle" : "$literal44$",
+    "configTitle" : "$literal45$",
     "configPrompt" : null,
     "configType" : "list",
     "configError" : null,
@@ -995,37 +1016,37 @@
     "configReadonly" : false,
     "configRequired" : false,
     "configOptions" : [ {
-      "display" : "$literal39$",
+      "display" : "$literal40$",
       "value" : 0
     }, {
-      "display" : "$literal40$",
+      "display" : "$literal41$",
       "value" : 1
     }, {
-      "display" : "$literal23$",
+      "display" : "$literal24$",
       "value" : 2
     }, {
-      "display" : "$literal24$",
+      "display" : "$literal25$",
       "value" : 3
     }, {
-      "display" : "$literal25$",
+      "display" : "$literal26$",
       "value" : 4
     }, {
-      "display" : "$literal26$",
+      "display" : "$literal27$",
       "value" : 5
     }, {
-      "display" : "$literal27$",
+      "display" : "$literal28$",
       "value" : 6
     }, {
-      "display" : "$literal28$",
+      "display" : "$literal29$",
       "value" : 7
     }, {
-      "display" : "$literal29$",
+      "display" : "$literal30$",
       "value" : 8
     }, {
-      "display" : "$literal30$",
+      "display" : "$literal31$",
       "value" : 9
     }, {
-      "display" : "$literal31$",
+      "display" : "$literal32$",
       "value" : 10
     } ],
     "configMin" : null,
@@ -1037,67 +1058,68 @@
     "valyrian" : {
       "ColorRed" : "Red",
       "$literal0$" : "Draw Date",
-      "$literal16$" : "Foreground Color 2",
-      "$literal24$" : "3",
-      "$literal36$" : "15",
+      "$literal16$" : "Foreground Color 1",
+      "$literal24$" : "2",
+      "$literal36$" : "14",
       "$literal4$" : "Draw Seconds Hand",
-      "$literal28$" : "7",
-      "$literal40$" : "1",
+      "$literal28$" : "6",
+      "$literal40$" : "0",
       "ColorTurquoise" : "Turquoise",
       "$literal8$" : "Draw Minute Ticks",
       "ColorWhite" : "White",
-      "$literal44$" : "Hour Hand Thinning",
+      "$literal44$" : "Minute Hand Thinning",
       "$literal12$" : "Light",
-      "$literal20$" : "Hour Hand Color 2",
-      "$literal32$" : "11",
+      "$literal20$" : "Hour Hand Color 1",
+      "$literal32$" : "10",
       "ColorCustom" : "Custom",
       "ColorOrange" : "Orange",
-      "$literal15$" : "Foreground Color 1",
-      "$literal27$" : "6",
+      "$literal15$" : "Background Color",
+      "$literal27$" : "5",
       "$literal3$" : "Draw Numbers",
-      "$literal35$" : "14",
-      "$literal19$" : "Hour Hand Color 1",
+      "$literal35$" : "13",
+      "$literal19$" : "Minute Hand Color 2",
       "$literal7$" : "Draw after gesture",
-      "$literal39$" : "0",
+      "$literal39$" : "Hour Hand Length",
       "ColorPurple" : "Purple",
       "ColorOliveGreen" : "OliveGreen",
       "$literal11$" : "Theme",
-      "$literal23$" : "2",
-      "$literal31$" : "10",
-      "$literal43$" : "Minute Hand Thinning",
+      "$literal23$" : "Minute Hand Width",
+      "$literal31$" : "9",
+      "$literal43$" : "Seconds Hand Length",
       "ColorBlue" : "Blue",
       "ColorDarkRed" : "Dark Red",
       "ColorYellow" : "Yellow",
       "AppName" : "Simplex",
       "ColorDarkGreen" : "Dark Green",
-      "$literal26$" : "5",
-      "$literal38$" : "Hour Hand Length",
+      "$literal26$" : "4",
+      "$literal38$" : "Hour Hand Width",
       "$literal2$" : "No",
-      "$literal14$" : "Background Color",
+      "$literal14$" : "Draw Battery Info",
       "$literal6$" : "Draw always (uses more battery)",
-      "$literal18$" : "Minute Hand Color 2",
-      "$literal30$" : "9",
+      "$literal18$" : "Minute Hand Color 1",
+      "$literal30$" : "8",
       "ColorPink" : "Pink",
-      "$literal22$" : "Minute Hand Width",
+      "$literal22$" : "Seconds Hand Color",
       "ColorGreen" : "Green",
-      "$literal34$" : "13",
-      "$literal42$" : "Seconds Hand Length",
+      "$literal34$" : "12",
+      "$literal42$" : "Minute Hand Length",
       "$literal10$" : "Mode",
       "ColorLightGray" : "Light Gray",
       "ColorDarkGray" : "Dark Gray",
       "ColorDarkBlue" : "Dark Blue",
       "ColorBlack" : "Black",
       "$literal1$" : "Yes",
-      "$literal37$" : "Hour Hand Width",
+      "$literal37$" : "15",
       "$literal13$" : "Dark",
-      "$literal25$" : "4",
+      "$literal25$" : "3",
       "$literal5$" : "Seconds Hand Mode (only MIP screens)",
-      "$literal17$" : "Minute Hand Color 1",
-      "$literal29$" : "8",
+      "$literal17$" : "Foreground Color 2",
+      "$literal29$" : "7",
       "$literal9$" : "Draw Hour Ticks",
-      "$literal41$" : "Minute Hand Length",
-      "$literal33$" : "12",
-      "$literal21$" : "Seconds Hand Color"
+      "$literal41$" : "1",
+      "$literal33$" : "11",
+      "$literal45$" : "Hour Hand Thinning",
+      "$literal21$" : "Hour Hand Color 2"
     }
   }
 }

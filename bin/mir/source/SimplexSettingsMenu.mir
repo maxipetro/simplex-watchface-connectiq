@@ -152,16 +152,16 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_39_71
         %tmp.41 = getv function %tmp.40 :getValue;
         %tmp.42 = "Mode";
         %tmp.43 = invoke %tmp.40 %tmp.41(%tmp.42);
-        bf %tmp.43 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_39_71_false;
+        bf %tmp.43 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_39_71_else_false;
 _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_39_71_true:
         %tmp.44 = true;
         push %tmp.44;
         goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_39_71_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_39_71_false:
+_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_39_71_else_false:
         %tmp.45 = false;
         push %tmp.45;
 _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_39_71_end:
-        %tmp.46 = phi [%tmp.43 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_39_71_begin] [%tmp.44 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_39_71_true] [%tmp.45 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_39_71_false] [%tmp.46 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_39_71_end];
+        %tmp.46 = phi [%tmp.43 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_39_71_begin] [%tmp.44 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_39_71_true] [%tmp.45 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_39_71_else_false] [%tmp.46 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_39_71_end];
         lputv %val.2 %tmp.46;
         symbol [ val %val.2 39 16 19 ];
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 41 12 ]
@@ -250,16 +250,16 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_61_72
         %tmp.79 = getv function %tmp.78 :getValue;
         %tmp.80 = "Theme";
         %tmp.81 = invoke %tmp.78 %tmp.79(%tmp.80);
-        bf %tmp.81 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_61_72_false;
+        bf %tmp.81 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_61_72_else_false;
 _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_61_72_true:
         %tmp.82 = true;
         push %tmp.82;
         goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_61_72_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_61_72_false:
+_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_61_72_else_false:
         %tmp.83 = false;
         push %tmp.83;
 _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_61_72_end:
-        %tmp.84 = phi [%tmp.81 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_61_72_begin] [%tmp.82 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_61_72_true] [%tmp.83 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_61_72_false] [%tmp.84 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_61_72_end];
+        %tmp.84 = phi [%tmp.81 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_61_72_begin] [%tmp.82 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_61_72_true] [%tmp.83 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_61_72_else_false] [%tmp.84 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_61_72_end];
         lputv %val.3 %tmp.84;
         symbol [ val %val.3 61 16 19 ];
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 63 12 ]

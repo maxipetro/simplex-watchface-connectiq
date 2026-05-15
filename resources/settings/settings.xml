@@ -55,6 +55,13 @@
         </settingConfig>
     </setting>
 
+    <setting propertyKey="@Properties.DrawDatafield" title="Draw Battery Info">
+        <settingConfig type="list">
+            <listEntry value="1">Yes</listEntry>
+            <listEntry value="0">No</listEntry>
+        </settingConfig>
+    </setting>
+
     <setting propertyKey="@Properties.BackgroundColor" title="Background Color">
         <settingConfig type="list">            
             <listEntry value="-1">@Strings.ColorCustom</listEntry>

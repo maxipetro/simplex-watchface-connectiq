@@ -12,6 +12,8 @@ class SimplexView extends WatchUi.WatchFace
     private var draw_date_bool;
     private var draw_numbers_bool;
 
+    private var draw_datafield_bool;
+
     private var secondshand_mode;
 
     private var background_color;
@@ -47,7 +49,7 @@ class SimplexView extends WatchUi.WatchFace
 
     function loadSettings()
     {
-//theme mode (code 0)
+        //theme mode (code 0)
         if(Application.Properties.getValue("Mode") as Number == 0)
         {
             //black theme (code 1)
@@ -127,6 +129,8 @@ class SimplexView extends WatchUi.WatchFace
         draw_minuteticks_bool = Application.Properties.getValue("DrawMinuteTicks") as Number;
         draw_hourticks_bool = Application.Properties.getValue("DrawHourTicks") as Number;
 
+        draw_datafield_bool = Application.Properties.getValue("DrawDatafield") as Number;
+
         //if the watch does not support partial updates we force the second hand mode to gesture mode
         if(! (WatchUi.WatchFace has :onPartialUpdate))
         {
@@ -181,6 +185,8 @@ class SimplexView extends WatchUi.WatchFace
         draw_numbers_bool = true;
         draw_minuteticks_bool= true;
         draw_hourticks_bool= true;
+
+        draw_datafield_bool = false;
         
         hour_hand_width = 7.0f;
         minute_hand_width = 4.0f;
@@ -280,6 +286,11 @@ class SimplexView extends WatchUi.WatchFace
 
         drawTicks(dc,center_x,center_y, screen_width, screen_height, length_long, length_short);
 
+        if(draw_datafield_bool)
+        {
+            drawBattery(dc,center_x,center_y, screen_width, screen_height);
+        }
+
 
         // draw the hours hand
         drawHand(dc, center_x,center_y, hour_hand_length,hour_hand_width, hour_hand_thinning,degHour, left_hour_hand_color, right_hour_hand_color);
@@ -314,6 +325,17 @@ class SimplexView extends WatchUi.WatchFace
         // dc.drawText(center_x ,center_y + 20 ,Graphics.FONT_SMALL,""+clockTime.sec,Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
+    function onPartialUpdate(dc) 
+    {        
+        if(secondshand_mode == 1 && draw_secondshand_bool)
+        {
+            drawSecondsHand(dc, true, seconds_hand_length_setting);
+        }
+
+        // for debugging to check execution time of whole redraw routine
+        // onUpdate(dc);
+    }
+
     function drawCenter(dc, center_x, center_y, seconds_hand_color) 
     {
 
@@ -331,8 +353,28 @@ class SimplexView extends WatchUi.WatchFace
 
         dc.setPenWidth(outer_diameter);
         dc.setColor(Graphics.COLOR_LT_GRAY, background_color);
-        dc.fillCircle(center_x, center_y,2);
+        dc.fillCircle(center_x, center_y, 2);
 
+    }
+
+    function drawBattery(dc,center_x,center_y, screen_width, screen_height)
+    {
+        var stats = System.getSystemStats();
+        var pwr = stats.battery;
+        // var batStr = Lang.format("$1$", [(Math.round(pwr)).format("%2d")]); 
+
+        var ratio =  screen_width/240.0f;
+
+        dc.setColor(foreground_alt_color, background_color);
+
+        //draw the battery icon
+        dc.setPenWidth(Math.round(1*ratio));
+        dc.drawRectangle(center_x - 6*ratio, center_y + (screen_height/5), 12*ratio, 8*ratio);
+        dc.fillRectangle(center_x - 6*ratio, center_y + (screen_height/5), 12*ratio*(pwr/100), 8*ratio);
+        dc.drawLine(center_x + 6*ratio + Math.round(1*ratio), center_y + (screen_height/5) + 2*ratio, center_x + 6*ratio + Math.round(1*ratio), center_y + (screen_height/5) + Math.round(4*ratio));
+
+        //draw the battery percent
+        dc.drawText(center_x, center_y + screen_height/4, Graphics.FONT_XTINY, Math.round(pwr).toNumber(), Graphics.TEXT_JUSTIFY_CENTER);
     }
 
     function drawDate(dc,center_x,center_y, screen_width, screen_height) 
@@ -736,17 +778,6 @@ class SimplexView extends WatchUi.WatchFace
         clip_y_old = clip_y;
         clip_height_old = clip_height;
         clip_width_old = clip_width;
-    }
-
-    function onPartialUpdate( dc ) 
-    {        
-        if(secondshand_mode == 1 && draw_secondshand_bool)
-        {
-            drawSecondsHand(dc, true, seconds_hand_length_setting);
-        }
-
-        // for debugging to check execution time of whole redraw routine
-        // onUpdate(dc);
     }
 
 }

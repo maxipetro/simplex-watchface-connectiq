@@ -89,6 +89,9 @@ class SimplexApp extends Application.AppBase
         menu.addItem(new WatchUi.MenuItem("Theme", val ? "Dark Theme" : "Light Theme", "Theme", null));
         // }
 
+        val = Application.Properties.getValue("DrawDatafield") ? true : false;
+        menu.addItem(new WatchUi.ToggleMenuItem("Draw Battery Info", null, "DrawDatafield", val, null));
+
         //watches at 4.2.0 and below do not have enough memory to display these settings
         if(version > 420)
         {
